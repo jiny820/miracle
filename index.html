@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1분의 기적</title>
+
+    <!-- TensorFlow.js 라이브러리 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <!-- Face Landmarks Detection 라이브러리 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>1분의 기적 캠페인</h1>
+    <p>두 사람이 눈을 맞추고 있으면 1분 타이머가 시작됩니다.</p>
+    <video id="camera" autoplay muted></video>
+    <canvas id="fireworks"></canvas>
+    <div id="timer">타이머: 60초</div>
+    <button id="startRecording">녹화 시작</button>
+    <button id="stopRecording" disabled>녹화 중지</button>
+    <video id="recording" controls></video>
+
+    <script src="script.js"></script>
+</body>
+</html>
